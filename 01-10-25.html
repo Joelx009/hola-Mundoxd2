@@ -3,106 +3,75 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Semana Gastronómica Exclusiva | Regístrate y Gana</title>
-    <link rel="stylesheet" href="css\css\diseño.css">
+    <title>Semana del Pique Macho | La Paz 🇧🇴</title>
+    <link rel="stylesheet" href="css\css\diseño.css"> 
 </head>
 <body>
 
-    <header class="header">
-        <div class="container">
-            <h1>¡No te pierdas la Semana Gastronómica Exclusiva! 🍽️</h1>
-            <p class="subtitle">Descubre platillos únicos, recibe descuentos VIP y vota por tu sucursal favorita.</p>
-            
-            <div class="form-box">
-                <p class="timer">¡Solo quedan ⏳ 3 Días para el Registro VIP!</p>
-                <form action="/submit-registro" method="POST">
-                    <input type="text" name="nombre" placeholder="Tu Nombre" required>
-                    <input type="email" name="email" placeholder="Tu Correo Electrónico" required>
-                    <button type="submit" class="cta-button">QUIERO ACCEDER A LOS DESCUENTOS</button>
-                </form>
-            </div>
-        </div>
+    <header class="hero">
+        <div class="logo-placeholder">🍴 LA PAZ GOURMET 🇧🇴</div>
+        
+        <h1>Semana del Pique Macho</h1>
+        
+        <p class="subtitle">¡La edición más lujosa del clásico paceño, disponible solo por 7 días! **No te quedes sin tu reservación.**</p>
+        
+        <a href="#booking" class="cta-button">¡QUIERO MI PIQUE MACHO EXCLUSIVO!</a>
+        
+        <p class="countdown-text">¡Últimos cupos disponibles!</p>
     </header>
+    
+    <hr class="separator">
 
-    <div class="container">
-        <h2>Sabores que Enamoran</h2>
-        <div class="gallery">
-            <div class="image-card"><img src="placeholder_burger.jpg" alt="Hamburguesa gourmet"></div>
-            <div class="image-card"><img src="placeholder_pasta.jpg" alt="Plato de pasta fresca"></div>
-            <div class="image-card"><img src="placeholder_dessert.jpg" alt="Postre de chocolate"></div>
-            <div class="image-card"><img src="placeholder_taco.jpg" alt="Tacos con salsa picante"></div>
-        </div>
-    </div>
-
-    <div class="container">
-        <h2>💥 Desbloquea Promociones Exclusivas al Registrarte</h2>
-        <div class="promos">
-            <div class="promo-card">
-                <h3>2x1 en Bebidas Artesanales</h3>
-                <p>Aplica en todas las sucursales durante el evento.</p>
+    <div class="benefits-section">
+        <h2 class="section-title-red">Una Experiencia que Despierta el Alma Andina</h2>
+        <div class="benefits-grid">
+            <div class="benefit-item">
+                <h3>🥩 Carne de Primera</h3>
+                <p>Selección de lomo fino, cocido a la perfección y con el sabor ahumado que exige un pique de lujo.</p>
             </div>
-            <div class="promo-card">
-                <h3>Postre de la Casa GRATIS</h3>
-                <p>Por una compra mínima en la sucursal Centro.</p>
+            <div class="benefit-item">
+                <h3>🌶️ El Picante Justo</h3>
+                <p>Elaborado con **ají y locoto paceño** fresco para ese toque vibrante y estimulante, ideal para el frío andino.</p>
             </div>
-            <div class="promo-card">
-                <h3>20% OFF en Menú del Chef</h3>
-                <p>Acceso anticipado a los platos más esperados.</p>
-            </div>
-        </div>
-    </div>
-
-    <div class="container">
-        <h2>Lo que Dicen Nuestros Clientes</h2>
-        <div class="reviews">
-            <div class="review-card">
-                "¡El mejor evento de comida! Las reseñas me ayudaron a elegir la mejor sucursal y el descuento valió la pena."
-                <div class="review-author">— Sofía R. (Cliente VIP)</div>
-            </div>
-             <div class="review-card">
-                "Todo delicioso. La landing page me facilitó ver las promos y su ubicación. 5 estrellas."
-                <div class="review-author">— Javier M. (Sucursal Norte)</div>
+            <div class="benefit-item">
+                <h3>⭐ Calidad Gourmet</h3>
+                <p>Presentación impecable en un ambiente sofisticado, con el mejor servicio de la ciudad de La Paz.</p>
             </div>
         </div>
     </div>
     
-    <section id="deja-tu-resena">
-        <div class="container">
-            <h2>¡Tu Opinión Cuenta! Déjanos tu Reseña</h2>
-            <p class="subtitle" style="text-align: center;">¿Ya visitaste una sucursal? Ayuda a otros comensales compartiendo tu experiencia.</p>
-            
-            <div class="form-comentario">
-                <form action="/submit-resena" method="POST">
-                    <input type="text" name="nombre_resena" placeholder="Tu Nombre" required>
-                    <input type="text" name="sucursal" placeholder="Sucursal que visitaste (Ej: Centro o Norte)" required>
-                    
-                    <div class="rating-input">
-                        <label for="rating">Puntuación:</label>
-                        <select id="rating" name="rating" required>
-                            <option value="">-- Elige una calificación --</option>
-                            <option value="5">⭐⭐⭐⭐⭐ Excelente</option>
-                            <option value="4">⭐⭐⭐⭐ Muy Buena</option>
-                            <option value="3">⭐⭐⭐ Buena</option>
-                            <option value="2">⭐⭐ Regular</option>
-                            <option value="1">⭐ Pobre</option>
-                        </select>
-                    </div>
+    <hr class="separator separator-dark">
 
-                    <textarea name="comentario" placeholder="Escribe tu reseña aquí (máx. 300 caracteres)" maxlength="300" rows="5" required></textarea>
-                    
-                    <button type="submit" class="cta-button submit-resena">Enviar Reseña</button>
-                </form>
-            </div>
+    <div class="social-proof">
+        <h2 class="section-title-yellow">La Prueba Social que Convence</h2>
+        <div class="review-box">
+            <p class="stars">★★★★★</p>
+            <p>"El mejor Pique Macho que he probado. La carne estaba tierna, las papas crujientes y el ambiente... ¡Súper elegante! Valió cada boliviano."</p>
+            <p class="reviewer">— Juan P., Cliente Premium</p>
         </div>
-    </section>
+        <div class="review-box">
+            <p class="stars">★★★★★</p>
+            <p>"Una porción realmente 'macho'. El contraste entre el picante y la cerveza fría es la gloria. La atención es de primera. Muy recomendable."</p>
+            <p class="reviewer">— Sofía V., Cliente Frecuente</p>
+        </div>
+    </div>
 
-    <section class="cta-section">
-        <div class="container">
-            <h2>¡No esperes más! Asegura tu Entrada Exclusiva</h2>
-            <p>Regístrate ahora y recibe tu pase con las promociones directamente en tu correo.</p>
-            <a href="#" class="cta-button">REGISTRARME AHORA</a>
-        </div>
-    </section>
+    <div class="booking-section" id="booking">
+        <h2 class="section-title-red">¡Reserva tu Experiencia Ahora!</h2>
+        <p class="subtitle booking-subtitle">No te arriesgues a quedarte sin mesa. Confirma en el siguiente formulario.</p>
+        <form class="booking-form">
+            <input type="text" placeholder="Nombre Completo" required>
+            <input type="email" placeholder="Correo Electrónico" required>
+            <input type="number" placeholder="Teléfono (WhatsApp)" required>
+            <input type="number" placeholder="Número de Platos (Mín. 1)" min="1" required>
+            <button type="submit">CONFIRMAR RESERVA PREMIUM</button>
+        </form>
+    </div>
+
+    <footer>
+        <p>© 2025 Semana del Pique Macho - La Paz, Bolivia | Evento Exclusivo</p>
+        <p>Contáctanos vía WhatsApp para grupos grandes: <a href="tel:+59170012345" class="footer-link">700-12345</a></p>
+    </footer>
 
 </body>
 </html>
