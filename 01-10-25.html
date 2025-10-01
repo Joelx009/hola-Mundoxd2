@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Semana Gastronómica Exclusiva | Regístrate y Gana</title>
+    <link rel="stylesheet" href="css\css\diseño.css">
+</head>
+<body>
+
+    <header class="header">
+        <div class="container">
+            <h1>¡No te pierdas la Semana Gastronómica Exclusiva! 🍽️</h1>
+            <p class="subtitle">Descubre platillos únicos, recibe descuentos VIP y vota por tu sucursal favorita.</p>
+            
+            <div class="form-box">
+                <p class="timer">¡Solo quedan ⏳ 3 Días para el Registro VIP!</p>
+                <form action="/submit-registro" method="POST">
+                    <input type="text" name="nombre" placeholder="Tu Nombre" required>
+                    <input type="email" name="email" placeholder="Tu Correo Electrónico" required>
+                    <button type="submit" class="cta-button">QUIERO ACCEDER A LOS DESCUENTOS</button>
+                </form>
+            </div>
+        </div>
+    </header>
+
+    <div class="container">
+        <h2>Sabores que Enamoran</h2>
+        <div class="gallery">
+            <div class="image-card"><img src="placeholder_burger.jpg" alt="Hamburguesa gourmet"></div>
+            <div class="image-card"><img src="placeholder_pasta.jpg" alt="Plato de pasta fresca"></div>
+            <div class="image-card"><img src="placeholder_dessert.jpg" alt="Postre de chocolate"></div>
+            <div class="image-card"><img src="placeholder_taco.jpg" alt="Tacos con salsa picante"></div>
+        </div>
+    </div>
+
+    <div class="container">
+        <h2>💥 Desbloquea Promociones Exclusivas al Registrarte</h2>
+        <div class="promos">
+            <div class="promo-card">
+                <h3>2x1 en Bebidas Artesanales</h3>
+                <p>Aplica en todas las sucursales durante el evento.</p>
+            </div>
+            <div class="promo-card">
+                <h3>Postre de la Casa GRATIS</h3>
+                <p>Por una compra mínima en la sucursal Centro.</p>
+            </div>
+            <div class="promo-card">
+                <h3>20% OFF en Menú del Chef</h3>
+                <p>Acceso anticipado a los platos más esperados.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <h2>Lo que Dicen Nuestros Clientes</h2>
+        <div class="reviews">
+            <div class="review-card">
+                "¡El mejor evento de comida! Las reseñas me ayudaron a elegir la mejor sucursal y el descuento valió la pena."
+                <div class="review-author">— Sofía R. (Cliente VIP)</div>
+            </div>
+             <div class="review-card">
+                "Todo delicioso. La landing page me facilitó ver las promos y su ubicación. 5 estrellas."
+                <div class="review-author">— Javier M. (Sucursal Norte)</div>
+            </div>
+        </div>
+    </div>
+    
+    <section id="deja-tu-resena">
+        <div class="container">
+            <h2>¡Tu Opinión Cuenta! Déjanos tu Reseña</h2>
+            <p class="subtitle" style="text-align: center;">¿Ya visitaste una sucursal? Ayuda a otros comensales compartiendo tu experiencia.</p>
+            
+            <div class="form-comentario">
+                <form action="/submit-resena" method="POST">
+                    <input type="text" name="nombre_resena" placeholder="Tu Nombre" required>
+                    <input type="text" name="sucursal" placeholder="Sucursal que visitaste (Ej: Centro o Norte)" required>
+                    
+                    <div class="rating-input">
+                        <label for="rating">Puntuación:</label>
+                        <select id="rating" name="rating" required>
+                            <option value="">-- Elige una calificación --</option>
+                            <option value="5">⭐⭐⭐⭐⭐ Excelente</option>
+                            <option value="4">⭐⭐⭐⭐ Muy Buena</option>
+                            <option value="3">⭐⭐⭐ Buena</option>
+                            <option value="2">⭐⭐ Regular</option>
+                            <option value="1">⭐ Pobre</option>
+                        </select>
+                    </div>
+
+                    <textarea name="comentario" placeholder="Escribe tu reseña aquí (máx. 300 caracteres)" maxlength="300" rows="5" required></textarea>
+                    
+                    <button type="submit" class="cta-button submit-resena">Enviar Reseña</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <section class="cta-section">
+        <div class="container">
+            <h2>¡No esperes más! Asegura tu Entrada Exclusiva</h2>
+            <p>Regístrate ahora y recibe tu pase con las promociones directamente en tu correo.</p>
+            <a href="#" class="cta-button">REGISTRARME AHORA</a>
+        </div>
+    </section>
+
+</body>
+</html>
