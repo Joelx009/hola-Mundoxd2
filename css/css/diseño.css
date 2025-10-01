@@ -1,0 +1,260 @@
+/* ======================================= */
+/* 1. PALETA DE COLORES Y ESTILOS BASE     */
+/* ======================================= */
+:root {
+    --color-background-dark: #1a1a1a; /* Negro Elegante */
+    --color-background-medium: #2c2c2c; /* Gris Carbón */
+    --color-accent-red: #FF4500;    /* Rojo Intenso (Apetito, Urgencia) */
+    --color-accent-yellow: #FFC300; /* Amarillo Dorado (Lujo, Atención) */
+    --color-text-light: #E0E0E0;
+    --color-green-fresh: #00AA4E;   /* Verde Oliva/Frescura */
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: var(--color-background-dark);
+    color: var(--color-text-light);
+    text-align: center;
+}
+
+/* Títulos y Separadores */
+h1 { font-family: 'Georgia', serif; }
+.subtitle { font-weight: 300; }
+
+.section-title-red { color: var(--color-accent-red); margin-bottom: 20px; }
+.section-title-yellow { color: var(--color-accent-yellow); margin-bottom: 20px; }
+
+.separator { border-color: var(--color-accent-yellow); margin: 0; }
+.separator-dark { border-color: #444; }
+
+
+/* ======================================= */
+/* 2. HERO SECTION Y TITULARES             */
+/* ======================================= */
+.hero {
+    background-color: var(--color-background-medium);
+    padding: 60px 20px;
+    min-height: 85vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo-placeholder {
+    font-size: 2.5em;
+    color: var(--color-accent-yellow);
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+h1 {
+    font-size: 3.8em;
+    color: var(--color-accent-red);
+    margin: 10px 0 20px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    border-bottom: 4px solid var(--color-accent-yellow);
+    padding-bottom: 10px;
+}
+
+.subtitle {
+    font-size: 1.6em;
+    margin-bottom: 40px;
+}
+
+.countdown-text {
+    margin-top: 20px; 
+    font-size: 1.1em; 
+    color: var(--color-accent-yellow);
+    font-weight: bold;
+}
+
+
+/* ======================================= */
+/* 3. BOTÓN DE LLAMADA A LA ACCIÓN (CTA)   */
+/* ======================================= */
+.cta-button {
+    display: inline-block;
+    background-color: var(--color-accent-red); 
+    color: white;
+    padding: 18px 45px;
+    font-size: 2em;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 10px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    box-shadow: 0 6px 20px rgba(255, 69, 0, 0.7); 
+    border: 3px solid var(--color-accent-yellow);
+    animation: pulse 1.5s infinite; 
+}
+
+.cta-button:hover {
+    background-color: var(--color-accent-yellow);
+    color: var(--color-background-dark);
+    transform: scale(1.05);
+    box-shadow: 0 8px 25px rgba(255, 195, 0, 0.9);
+    animation: none;
+}
+
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.02); }
+    100% { transform: scale(1); }
+}
+
+
+/* ======================================= */
+/* 4. BENEFICIOS Y PRUEBA SOCIAL           */
+/* ======================================= */
+.benefits-section {
+    padding: 60px 20px;
+    background-color: var(--color-background-dark);
+}
+
+.benefits-grid {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 40px;
+    margin-top: 40px;
+}
+
+.benefit-item {
+    max-width: 300px;
+    text-align: left;
+    border-left: 5px solid var(--color-green-fresh);
+    padding-left: 20px;
+}
+
+.benefit-item h3 {
+    color: var(--color-accent-yellow);
+    font-size: 1.5em;
+    margin-top: 0;
+    font-weight: bold;
+}
+
+.social-proof {
+    background-color: var(--color-background-medium);
+    padding: 60px 20px;
+}
+
+.review-box {
+    background-color: #383838;
+    padding: 25px;
+    border-radius: 8px;
+    max-width: 700px;
+    margin: 25px auto;
+    border-left: 6px solid var(--color-accent-red);
+    font-style: italic;
+    text-align: left;
+}
+
+.review-box .stars {
+    color: var(--color-accent-yellow);
+    font-size: 1.8em;
+    margin-bottom: 10px;
+    text-align: center;
+}
+.reviewer {
+    text-align: right;
+    font-style: normal;
+    font-weight: bold;
+}
+
+
+/* ======================================= */
+/* 5. FORMULARIO DE RESERVA                */
+/* ======================================= */
+.booking-section {
+    padding: 50px 20px;
+    background-color: var(--color-background-dark);
+}
+
+.booking-subtitle {
+    margin-bottom: 20px !important; 
+    font-size: 1.3em;
+}
+
+.booking-form {
+    max-width: 450px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 2px solid var(--color-accent-yellow);
+    border-radius: 8px;
+    background-color: var(--color-background-medium);
+}
+
+.booking-form input {
+    width: calc(100% - 30px); /* Ajuste de padding */
+    padding: 15px;
+    margin: 10px 0;
+    border: 1px solid #555;
+    background-color: #383838;
+    color: var(--color-text-light);
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+.booking-form button {
+    background-color: var(--color-accent-yellow); 
+    color: var(--color-background-dark);
+    padding: 15px 30px;
+    border: none;
+    font-size: 1.4em;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 15px;
+    transition: background-color 0.3s ease;
+}
+
+.booking-form button:hover {
+    background-color: var(--color-accent-red);
+    color: white;
+}
+
+
+/* ======================================= */
+/* 6. PIE DE PÁGINA Y RESPONSIVE           */
+/* ======================================= */
+footer {
+    background-color: #000000;
+    color: #888;
+    padding: 25px 0;
+    font-size: 1em;
+}
+
+.footer-link {
+    color: var(--color-accent-yellow);
+    text-decoration: none;
+}
+
+/* Adaptación móvil (Responsive) */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 3em;
+        letter-spacing: 2px;
+    }
+    .subtitle {
+        font-size: 1.4em;
+    }
+    .cta-button {
+        font-size: 1.6em;
+        padding: 15px 35px;
+    }
+}
+@media (max-width: 480px) {
+    h1 {
+        font-size: 2.2em;
+    }
+    .subtitle {
+        font-size: 1.1em;
+    }
+    .benefits-grid {
+        gap: 30px;
+    }
+}
